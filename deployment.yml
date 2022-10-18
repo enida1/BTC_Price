@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: btcprice
+spec:
+  selector:
+    matchLabels:
+      app: btcprice
+  template:
+    metadata:
+      labels:
+        app: btcprice
+    spec:
+      containers:
+      - name: btcprice
+        image: docker.io/emataj/btcprice:2
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        env:
+        - name: "PORT"
+          value: "8080"

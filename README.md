@@ -58,10 +58,12 @@ To run this microservice, you would need python and the requests module installe
    git clone https://github.com/ematai1/BTC_Price.git
    ```
 3. Install Python packages
-   ```pip install requests
+   ```sh
+   pip install requests
    ```
 4. Enter your API in `python_price.py`
-   ```headers= {
+   ```sh
+   headers= {
         "apikey": "YOUR_API_KEY"
     }
    ```
@@ -77,12 +79,14 @@ To run this microservice, you would need python and the requests module installe
 Convert the project to a container image and deploy in K8s, 'Dockerfile' and K8s manifest file 'deployment.yml' is present in the repository. 
 When deployed, the microservice will autostart and listen in port 8080 by default. 
 Listening port can be customized in `python_price.py`
-   ```def run(server_class=HTTPServer, handler_class=httpdServer, addr="0.0.0.0", port=8080):
+   ```sh
+   def run(server_class=HTTPServer, handler_class=httpdServer, addr="0.0.0.0", port=8080):
    ```
 
 * Non-container project 
 Run the project by executing `python_price.py` file
-   ```python3 python_price.py
+   ```sh
+   python3 python_price.py
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

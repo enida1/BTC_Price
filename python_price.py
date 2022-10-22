@@ -10,14 +10,14 @@ def currencyConvert(europrice):
     url = f"https://api.apilayer.com/exchangerates_data/convert?to=czk&from=eur&amount={europrice}"
     payload = {}
     headers= {
-        "apikey": "wlPasXa7c8FotEjZ53vs1A66dETfLTlu"
+        "apikey": "YOUR_API_KEY"
     }
     value_czk = requests.request("GET", url, headers = headers, data = payload)
     price_czk = value_czk.json()["result"]
     return price_czk
 ##Retreive data from coindesk API and dump the required fields to json format
 def bitcoinPrice():
-    """The function """
+    """The function retreives data from coindesk API and dump the required fields to json format"""
     btc_price_api = requests.get(url="https://api.coindesk.com/v1/bpi/currentprice.json")
     ts = time.time()
     data_euro = btc_price_api.json()["bpi"]["EUR"]["rate_float"]

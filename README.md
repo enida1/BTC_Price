@@ -33,7 +33,7 @@ A Python microservice that will spawn a web server and return the price of Bitco
 
 ### Built With
 
-* [![Python][Python]][Python-url]
+* [![Python][Python.logo]][Python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,3 +102,4 @@ If you have a suggestion that would make this better, please fork the repo and c
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [Python-url]: https://www.python.org/
+[Python.logo]: https://img.shields.io/badge/Python-0?style=for-the-badge&logo=python&logoColor=white

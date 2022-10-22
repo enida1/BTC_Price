@@ -76,7 +76,7 @@ To run this microservice, you would need python and the requests module installe
 ## Usage
 
 * Running the project inside a container:
-Convert the project to a container image and deploy in K8s, 'Dockerfile' and K8s manifest file 'deployment.yml' is present in the repository. 
+Convert the project to a container image and deploy in K8s, `Dockerfile` and K8s manifest file `deployment.yml` is present in the repository. 
 When deployed, the microservice will autostart and listen in port 8080 by default. 
 Listening port can be customized in `python_price.py`
    ```sh

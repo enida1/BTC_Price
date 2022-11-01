@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: btcprice
-        image: docker.io/emataj/btcprice:2
+        image: docker.io/emataj/btcprice:btcprice
         resources:
           limits:
             memory: "128Mi"
